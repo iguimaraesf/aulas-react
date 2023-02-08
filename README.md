@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/watch?v=OkMhKAlEObw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=1)
+
 ## Available Scripts
 
 In the project directory, you can run:
