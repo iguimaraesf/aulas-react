@@ -18,8 +18,14 @@ docker run --rm --volume "%~dp0%1:/srv/react-docker" --workdir "/srv/react-docke
 
 ```
 
-chamar ReactNode.bat comeco
+chamar
+```
+ReactNode.bat comeco
+```
+...e dentro do container
+```
 cd aulas
+```
 
 Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/watch?v=OkMhKAlEObw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=1)
 
@@ -28,6 +34,11 @@ Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/wa
 
 ## Aula 03
 [Estrutura de pastas e rotas](https://www.youtube.com/watch?v=flqBnYMKiJE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=3) [e](https://www.youtube.com/watch?v=-3Cff7gND-Y&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=4)
+
+## Aula 04
+[Componentes e páginas](https://www.youtube.com/watch?v=antT8q5JFxA&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=5)
+Componente dentro de componente
+
 
 ## Available Scripts
 
