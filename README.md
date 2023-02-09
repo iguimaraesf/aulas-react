@@ -43,6 +43,17 @@ Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/wa
 [Formulário de login](https://www.youtube.com/watch?v=369iSxifmZk&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=6)
 - Navegação entre rotas.
 
+## Aula06
+[useState feito do jeito certo](https://www.youtube.com/watch?v=m-DDPENCxpE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=7)
+- useState
+- Não funcionou o hot reload (desbravando por mim mesmo)
+```
+npm install -D webpack-cli
+npm install -D ts-loader
+npm install -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+npm install -D webpack-dev-server
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

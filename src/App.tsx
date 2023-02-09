@@ -1,4 +1,4 @@
-// Era funcion App() {...} export App;
+// Era const App() {...} export App;
 
 import { AppRoutes } from "./routes"
 
