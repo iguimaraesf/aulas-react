@@ -2,7 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/watch?v=OkMhKAlEObw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=1)
+## Criar o container com o Node 19
+
+ReactNode.bat
+```
+if "%1" == "" (
+	echo "uso: NodeReact <nome da pasta do novo projeto>
+	exit
+)
+set pasta = "%~dp0%1"
+
+mkdir "%~dp0%1"
+
+docker run --rm --volume "%~dp0%1:/srv/react-docker" --workdir "/srv/react-docker" --publish 3000:3000 -it node:19 bash
+
+```
+
+chamar ReactNode.bat comeco
+cd aulas
+
+Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/watch?v=OkMhKAlEObw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=1)
+
+## Aula 02
+[Removendo arquivos](https://www.youtube.com/watch?v=OkMhKAlEObw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=2)
+
+## Aula 03
+[Estrutura de pastas e rotas](https://www.youtube.com/watch?v=flqBnYMKiJE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=3) [e](https://www.youtube.com/watch?v=-3Cff7gND-Y&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=4)
 
 ## Available Scripts
 

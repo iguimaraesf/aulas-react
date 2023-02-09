@@ -1,9 +1,10 @@
 // Era funcion App() {...} export App;
+
+import { AppRoutes } from "./routes"
+
 // Isso ajuda o intellisense do Visual Studio Code
 export const App = () => {
   return (
-    <div className="App">
-      Olá, mundão!
-    </div>
+    <AppRoutes/>
   );
 }
