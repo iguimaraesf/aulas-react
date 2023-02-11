@@ -57,6 +57,12 @@ npm install -D webpack-dev-server
 ## Aula 07
 [useEffect feito do jeito certo - uma introdução](https://www.youtube.com/watch?v=T34qDvn8u3c&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=8)
 - useEffect
+- executa quando uma dependência muda e *define* um novo valor
+
+## Aula 08
+[useMemo](https://www.youtube.com/watch?v=5jbTLtilzfI&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=9)
+- useMemo
+- executa quando uma dependência muda e *processa* um novo valor
 
 ## Available Scripts
 

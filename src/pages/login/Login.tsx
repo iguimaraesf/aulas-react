@@ -1,7 +1,13 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 export const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    
+    const emailLength = useMemo(() => {
+        // Não tem a função para definir um valor. Também executa quando uma das dependências muda.
+        console.log('Executou')
+        return email.length * 1000;
+    }, [email.length])
     const handleEntrar = () => {
         console.log(email)
     }
@@ -16,6 +22,7 @@ export const Login = () => {
     return (
         <div>
             <form>
+                <p>Quuantidade de caracteres no e-mail: {emailLength}</p>
                 <label>
                     <span>E-mail</span>
                     <input value={email} onChange={e => setEmail(e.target.value)}/>
