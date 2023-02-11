@@ -1,11 +1,18 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useEffect, useState } from "react"
 export const Login = () => {
-    const [email, setEmail] = useState('ze@meio.com')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const handleEntrar = () => {
         console.log(email)
     }
+    useEffect(() => {
+        // executa quando o EMAIL é alterado... e na carga da página
+        console.log(email)
+    }, [email])
+    useEffect(() => {
+        // executa quando a SENHA é alterada... e na carga da página
+        console.log(password)
+    }, [password])
     return (
         <div>
             <form>

@@ -44,7 +44,7 @@ Da série de vídeos [Curso de React com Typescript] (https://www.youtube.com/wa
 - Navegação entre rotas.
 
 ## Aula06
-[useState feito do jeito certo](https://www.youtube.com/watch?v=m-DDPENCxpE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=7)
+[useState feito do jeito certo - explicação](https://www.youtube.com/watch?v=m-DDPENCxpE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=7)
 - useState
 - Não funcionou o hot reload (desbravando por mim mesmo)
 ```
@@ -53,6 +53,10 @@ npm install -D ts-loader
 npm install -D @babel/core @babel/preset-env @babel/preset-react babel-loader
 npm install -D webpack-dev-server
 ```
+
+## Aula 07
+[useEffect feito do jeito certo - uma introdução](https://www.youtube.com/watch?v=T34qDvn8u3c&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=8)
+- useEffect
 
 ## Available Scripts
 
