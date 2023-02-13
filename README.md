@@ -64,6 +64,9 @@ npm install -D webpack-dev-server
 - useMemo
 - executa quando uma dependência muda e *processa* um novo valor
 
+## Aula 09
+[useCallback](https://www.youtube.com/watch?v=Uli4R2PKnxA&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=10)
+- useCallback
 ## Available Scripts
 
 In the project directory, you can run:

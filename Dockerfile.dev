@@ -1,0 +1,3 @@
+FROM node:19
+EXPOSE 3000
+WORKDIR /srv/react-docker

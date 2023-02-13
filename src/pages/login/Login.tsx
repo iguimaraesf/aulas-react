@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useState } from "react"
 export const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -8,9 +8,10 @@ export const Login = () => {
         console.log('Executou')
         return email.length * 1000;
     }, [email.length])
-    const handleEntrar = () => {
-        console.log(email)
-    }
+    const handleEntrar = useCallback(() => {
+        // useCallback - a função só é reconstruida se um dos estados mudar
+        console.log("useCallback: " + email)
+    }, [email])
     useEffect(() => {
         // executa quando o EMAIL é alterado... e na carga da página
         console.log(email)
