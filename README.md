@@ -67,6 +67,12 @@ npm install -D webpack-dev-server
 ## Aula 09
 [useCallback](https://www.youtube.com/watch?v=Uli4R2PKnxA&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=10)
 - useCallback
+- Reduzir a quantidade de vezes em que uma função é recriada
+
+## Aula 10
+[useRef](https://www.youtube.com/watch?v=ZPNUCOtyCDM&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=11)
+- useRef
+- obtém a referência para um elemento HTML
 ## Available Scripts
 
 In the project directory, you can run:
