@@ -73,6 +73,12 @@ npm install -D webpack-dev-server
 [useRef](https://www.youtube.com/watch?v=ZPNUCOtyCDM&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=11)
 - useRef
 - obtém a referência para um elemento HTML
+
+## Aula 11
+[mais useRef](https://www.youtube.com/watch?v=b0nmDHREJsw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=12)
+- referência sem tocar no HTML
+
+
 ## Available Scripts
 
 In the project directory, you can run:
