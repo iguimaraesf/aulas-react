@@ -81,6 +81,11 @@ npm install -D webpack-dev-server
 ## Aula 12
 [Componentes](https://www.youtube.com/watch?v=UgQJ1IyyPxg&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=13)
 
+## Aula 13
+[Referências dentro de componentes](https://www.youtube.com/watch?v=RT2_zt7q2_4&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=14)
+- forwardRef
+
+
 
 ## Available Scripts
 
