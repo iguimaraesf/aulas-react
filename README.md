@@ -105,6 +105,9 @@ npm install -D webpack-dev-server
 [Hook personalizado](https://www.youtube.com/watch?v=oTuTRDtyGFQ&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=19)
 - Simplificando o uso do código
 
+## Aula 18
+[Funções no contexto](https://www.youtube.com/watch?v=ABGP4UTbKvk&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=20)
+- Implementação da função de logout
 
 ## Available Scripts
 
