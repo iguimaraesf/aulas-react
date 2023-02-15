@@ -7,7 +7,7 @@ import { UsuarioLogadoProvider } from "./shared/contexts";
 // Isso ajuda o intellisense do Visual Studio Code
 export const App = () => {
   return (
-    <UsuarioLogadoProvider nomeDoUsuario='(nenhum)'>
+    <UsuarioLogadoProvider nomeDoUsuario='(nenhum)' logout={() => console.log('saida... no App.tsx')}>
       <AppRoutes/>
     </UsuarioLogadoProvider>
   );

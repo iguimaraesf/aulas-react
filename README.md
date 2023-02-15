@@ -103,6 +103,7 @@ npm install -D webpack-dev-server
 
 ## Aula 17
 [Hook personalizado](https://www.youtube.com/watch?v=oTuTRDtyGFQ&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=19)
+- Simplificando o uso do código
 
 
 ## Available Scripts
