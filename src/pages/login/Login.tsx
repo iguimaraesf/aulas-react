@@ -44,9 +44,6 @@ export const Login = () => {
                 <ButtonLogin onClick={handleEntrar} type="button">
                     Entrar aqui
                 </ButtonLogin>
-                {/* <button type="button" onClick={handleEntrar}>
-                    Entrar
-                </button> */}
             </form>
         </div>
     )

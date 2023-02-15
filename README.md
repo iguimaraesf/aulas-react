@@ -82,10 +82,19 @@ npm install -D webpack-dev-server
 [Componentes](https://www.youtube.com/watch?v=UgQJ1IyyPxg&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=13)
 
 ## Aula 13
-[Referências dentro de componentes](https://www.youtube.com/watch?v=RT2_zt7q2_4&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=14)
+[Referências dentro de componentes](https://www.youtube.com/watch?v=RT2_zt7q2_4&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=14) e (https://www.youtube.com/watch?v=GVc-b7Cx2T0&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=15)
 - forwardRef
 
+## Aula 14
+[Filhos](https://www.youtube.com/watch?v=GVc-b7Cx2T0&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=16)
+- componente para o botão
+- trecho de código dentro de uma tag de componente personalizado
 
+## Aula 15
+[Contextos](https://www.youtube.com/watch?v=OrXjC_wWlT0&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=17)
+- Criação do contexto
+- Compartilha informações entre componentes ou páginas
+- hack - createContext.... ({} as UsuarioLogadoContextData)
 
 ## Available Scripts
 
