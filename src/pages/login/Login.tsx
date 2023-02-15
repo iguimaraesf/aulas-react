@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from "react"
+import { UsuarioLogadoContext } from "../../shared/contexts"
 import { ButtonLogin } from "./components/buttonLogin"
 import { InputLogin } from "./components/inputLogin"
 export const Login = () => {
@@ -24,10 +25,12 @@ export const Login = () => {
         // executa quando a SENHA é alterada... e na carga da página
         console.log(password)
     }, [password])
+    const {nomeDoUsuario} = useContext(UsuarioLogadoContext)
     return (
         <div>
             <form>
-                <p>Quuantidade de caracteres no e-mail: {emailLength}</p>
+                <p>Quantidade de caracteres no e-mail: {emailLength}</p>
+                <p>Você é: {nomeDoUsuario}</p>
                 <InputLogin 
                     label="E-mail"
                     value={email}

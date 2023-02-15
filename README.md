@@ -96,6 +96,11 @@ npm install -D webpack-dev-server
 - Compartilha informações entre componentes ou páginas
 - hack - createContext.... ({} as UsuarioLogadoContextData)
 
+## Aula 16
+[Mais contextos](https://www.youtube.com/watch?v=v9FFFhYASmQ&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=18)
+- Usando o contexto criado
+- Contextos dentro dos componentes
+
 ## Available Scripts
 
 In the project directory, you can run:
