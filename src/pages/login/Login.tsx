@@ -1,5 +1,5 @@
-import { useCallback, useContext, useEffect, useMemo, useRef, useState } from "react"
-import { UsuarioLogadoContext } from "../../shared/contexts"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { useUsuarioLogado } from "../../shared/hooks"
 import { ButtonLogin } from "./components/buttonLogin"
 import { InputLogin } from "./components/inputLogin"
 export const Login = () => {
@@ -25,7 +25,7 @@ export const Login = () => {
         // executa quando a SENHA é alterada... e na carga da página
         console.log(password)
     }, [password])
-    const {nomeDoUsuario} = useContext(UsuarioLogadoContext)
+    const {nomeDoUsuario} = useUsuarioLogado()
     return (
         <div>
             <form>
