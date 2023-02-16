@@ -2,13 +2,17 @@ import { useCallback, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { useUsuarioLogado } from "../../shared/hooks"
 
+interface ItemDaLista {
+    title: string
+    isSelected: boolean
+}
 export const Dashboard = () => {
     // contador somente para exemplo do useRef
     const counterRef = useRef({counter: 0})
 
     const {nomeDoUsuario, logout} = useUsuarioLogado()
 
-    const [lista, setLista] = useState<string[]>(["Teste 1", "Teste 12", "Teste 3"])
+    const [lista, setLista] = useState<ItemDaLista[]>([])
     const handleAdicionarLista: React.KeyboardEventHandler<HTMLInputElement> = useCallback((e) => {
         // precisa colocar o valor numa constante primeiro
         // porque se usar direto "e.currentTarget.value" como retorno da arrow-function,
@@ -21,8 +25,10 @@ export const Dashboard = () => {
             // porque se precisar adicionar 2 itens, na segunda chamada,
             // a variável "lista" ainda não está atualizada.
             setLista((anterior) => {
-                if (anterior.includes(valor)) return anterior;
-                return [...anterior, valor]
+                if (anterior.some((value) => valor === value.title)) return anterior;
+                return [...anterior, {
+                    title: valor, isSelected: false
+                }]
             })
         }
     },
@@ -42,11 +48,27 @@ export const Dashboard = () => {
             <input
                 onKeyDown={handleAdicionarLista}
             />
+            <p>Selecionados: {lista.filter((item) => item.isSelected).length}</p>
             <div>
                 <p>Lista</p>
                 <ul>
                     {lista.map((value, index) => {
-                        return <li key={index}>{value}</li>
+                        // adiciona checked={...} porque quando já vier com valores carregados, mostra corretamente.
+                        return <li key={index}>
+                            <input 
+                            type="checkbox"
+                            checked={value.isSelected}
+                            onChange={() => {
+                                setLista((listaAnterior) => {
+                                    return listaAnterior.map(item => {
+                                        const selecionei = item.title === value.title ? !item.isSelected : item.isSelected                                        
+                                        return {...item, isSelected: selecionei}
+                                    })
+                                })
+                            }}
+                            />
+                            {value.title}
+                            </li>
                     })}
                 </ul>
             </div>
