@@ -109,6 +109,11 @@ npm install -D webpack-dev-server
 [Funções no contexto](https://www.youtube.com/watch?v=ABGP4UTbKvk&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=20)
 - Implementação da função de logout
 
+## Aula 19
+[Compartilhamento de estado (state)](https://www.youtube.com/watch?v=p2V-iWxgVKE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=21)
+- Simulando a mudança do contexto com useEffect
+
+
 ## Available Scripts
 
 In the project directory, you can run:
