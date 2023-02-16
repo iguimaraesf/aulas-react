@@ -113,6 +113,9 @@ npm install -D webpack-dev-server
 [Compartilhamento de estado (state)](https://www.youtube.com/watch?v=p2V-iWxgVKE&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=21)
 - Simulando a mudança do contexto com useEffect
 
+## Aula 20
+[Listas](https://www.youtube.com/watch?v=YMxc9biU9ms&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=22)
+- Sempre será usado na prática
 
 ## Available Scripts
 
