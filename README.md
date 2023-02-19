@@ -117,6 +117,17 @@ npm install -D webpack-dev-server
 [Listas](https://www.youtube.com/watch?v=YMxc9biU9ms&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=22)
 - Sempre será usado na prática
 
+## Aula 21
+[Listas com objetos](https://www.youtube.com/watch?v=YMxc9biU9ms&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=23)
+- Lista aprimorada com objetos e regras de negócio
+
+## Aula 22
+[JSON Server](https://www.youtube.com/watch?v=GruUvNF6OnM&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=24)
+- Recurso auxiliar
+- Simulação de back-end
+- Apresentação do json-server
+- Funciona se chamado de dentro do container com curl http://localhost:3000/posts
+
 ## Available Scripts
 
 In the project directory, you can run:
