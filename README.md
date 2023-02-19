@@ -132,6 +132,11 @@ npm install -D webpack-dev-server
 [Utilizando o JSON Server](https://www.youtube.com/watch?v=e6XlTZNv0iw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=25)
 - Configuração da entidade
 - Ajustes para trabalhar com o back-end
+
+## Aula 24
+[Camada de serviço](https://www.youtube.com/watch?v=T9hhp5qPykg&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=26)
+- CRUD completo de tarefas
+
 ## Available Scripts
 
 In the project directory, you can run:

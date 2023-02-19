@@ -2,7 +2,7 @@ import { useCallback, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { useUsuarioLogado } from "../../shared/hooks"
 
-interface ItemDaLista {
+interface ItemTarefa {
     id: number,
     title: string
     isCompleted: boolean
@@ -13,7 +13,7 @@ export const Dashboard = () => {
 
     const {nomeDoUsuario, logout} = useUsuarioLogado()
 
-    const [lista, setLista] = useState<ItemDaLista[]>([])
+    const [lista, setLista] = useState<ItemTarefa[]>([])
     const handleAdicionarLista: React.KeyboardEventHandler<HTMLInputElement> = useCallback((e) => {
         // precisa colocar o valor numa constante primeiro
         // porque se usar direto "e.currentTarget.value" como retorno da arrow-function,
