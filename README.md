@@ -128,6 +128,10 @@ npm install -D webpack-dev-server
 - Apresentação do json-server
 - Funciona se chamado de dentro do container com curl http://localhost:3000/posts
 
+## Aula 23
+[Utilizando o JSON Server](https://www.youtube.com/watch?v=e6XlTZNv0iw&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=25)
+- Configuração da entidade
+- Ajustes para trabalhar com o back-end
 ## Available Scripts
 
 In the project directory, you can run:

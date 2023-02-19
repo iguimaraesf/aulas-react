@@ -3,8 +3,9 @@ import { Link } from "react-router-dom"
 import { useUsuarioLogado } from "../../shared/hooks"
 
 interface ItemDaLista {
+    id: number,
     title: string
-    isSelected: boolean
+    isCompleted: boolean
 }
 export const Dashboard = () => {
     // contador somente para exemplo do useRef
@@ -27,7 +28,7 @@ export const Dashboard = () => {
             setLista((anterior) => {
                 if (anterior.some((value) => valor === value.title)) return anterior;
                 return [...anterior, {
-                    title: valor, isSelected: false
+                    title: valor, isCompleted: false, id: anterior.length
                 }]
             })
         }
@@ -48,20 +49,20 @@ export const Dashboard = () => {
             <input
                 onKeyDown={handleAdicionarLista}
             />
-            <p>Selecionados: {lista.filter((item) => item.isSelected).length}</p>
+            <p>Selecionados: {lista.filter((item) => item.isCompleted).length}</p>
             <div>
                 <p>Lista</p>
                 <ul>
-                    {lista.map((value, index) => {
+                    {lista.map((value) => {
                         // adiciona checked={...} porque quando já vier com valores carregados, mostra corretamente.
-                        return <li key={index}>
+                        return <li key={value.id}>
                             <input 
                             type="checkbox"
-                            checked={value.isSelected}
+                            checked={value.isCompleted}
                             onChange={() => {
                                 setLista((listaAnterior) => {
                                     return listaAnterior.map(item => {
-                                        const selecionei = item.title === value.title ? !item.isSelected : item.isSelected                                        
+                                        const selecionei = item.title === value.title ? !item.isCompleted : item.isCompleted
                                         return {...item, isSelected: selecionei}
                                     })
                                 })

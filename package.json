@@ -22,11 +22,12 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "build-webpack": "webpack",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "mock": "json-server --watch ./mock/db.json"
   },
   "eslintConfig": {
     "extends": [
