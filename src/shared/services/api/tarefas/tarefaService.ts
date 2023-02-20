@@ -1,8 +1,7 @@
 import { Api } from "../apiConfig"
 import { ApiException } from "../apiException"
 
-// TODO Isto está duplicado... por enquanto.
-interface ItemTarefa {
+export interface ItemTarefa {
     id: number,
     title: string
     isCompleted: boolean
