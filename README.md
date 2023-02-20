@@ -147,6 +147,11 @@ npm install -D webpack-dev-server
 ## Aula 26
 [Inclusão de uma tarefa](https://www.youtube.com/watch?v=E5BQvXTpCvY&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=28)
 
+## Aula 27
+[Alteração de uma tarefa](https://www.youtube.com/watch?v=SkI5AaZOsPs&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=29)
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -47,6 +47,26 @@ export const Dashboard = () => {
     [lista])
 //    [])
 
+    const handleToggleComplete = useCallback((id: number) => {
+        const tarefaParaAtualizar = lista.find((tarefa) => tarefa.id === id)
+        if (!tarefaParaAtualizar) return;
+
+        TarefaService.updateById(id, {
+            ...tarefaParaAtualizar, isCompleted: !tarefaParaAtualizar.isCompleted
+        })
+        .then((result) => {
+            if (result instanceof ApiException) {
+                alert(`Erro ao atualizar: ${result.message}`)
+            } else {
+                setLista((listaAnterior) => {
+                    return listaAnterior.map(item => {
+                        if (item.id === id) return result
+                        return item
+                    })
+                })
+            }
+        })
+    }, [lista])
     return (
         <div>
             <p>Minha dashboard</p>
@@ -70,15 +90,7 @@ export const Dashboard = () => {
                             <input 
                             type="checkbox"
                             checked={value.isCompleted}
-                            onChange={() => {
-                                setLista((listaAnterior) => {
-                                    return listaAnterior.map(item => {
-                                        const selecionei = item.title === value.title ? !item.isCompleted : item.isCompleted
-                                        return {...item, isSelected: selecionei}
-                                    })
-                                })
-                            }}
-                            />
+                            onChange={() => handleToggleComplete(value.id)}/>
                             {value.title}
                             </li>
                     })}
