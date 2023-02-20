@@ -28,20 +28,24 @@ export const Dashboard = () => {
         const valor = e.currentTarget.value.trim()
         if (e.key === 'Enter' && valor.length > 0) {
             e.currentTarget.value = ''
-            //setLista([...lista, e.currentTarget.value])
-            // ...mas a forma certa de fazer é esta,
-            // porque se precisar adicionar 2 itens, na segunda chamada,
-            // a variável "lista" ainda não está atualizada.
-            setLista((anterior) => {
-                if (anterior.some((value) => valor === value.title)) return anterior;
-                return [...anterior, {
-                    title: valor, isCompleted: false, id: anterior.length
-                }]
-            })
+            if (lista.some((value) => valor === value.title)) return;
+
+            TarefaService.create({title: valor, isCompleted: false})
+                .then((result) => {
+                    if (result instanceof ApiException) {
+                        alert(`Erro ao inserir: ${result.message}`)
+                    } else {
+                        //setLista([...lista, e.currentTarget.value])
+                        // ...mas a forma certa de fazer é esta,
+                        // porque se precisar adicionar 2 itens, na segunda chamada,
+                        // a variável "lista" ainda não está atualizada.
+                        setLista((anterior) => [...anterior, result])
+                    }
+                })
         }
     },
-    //[lista])
-    [])
+    [lista])
+//    [])
 
     return (
         <div>

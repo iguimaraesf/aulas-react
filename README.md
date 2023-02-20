@@ -141,6 +141,11 @@ npm install -D webpack-dev-server
 [Buscando tarefas](https://www.youtube.com/watch?v=PQ4uUnqhT8I&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=27)
 - com a flat --host 0.0.0.0, funcionou no container
 - além disso, publiquei também a porta 3333 de dentro do container.
+- no terminal do docker, executa npm run mock
+- no terminal da conexão ao container, executa npm start
+
+## Aula 26
+[Inclusão de uma tarefa](https://www.youtube.com/watch?v=E5BQvXTpCvY&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=28)
 
 ## Available Scripts
 
