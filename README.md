@@ -137,6 +137,11 @@ npm install -D webpack-dev-server
 [Camada de serviço](https://www.youtube.com/watch?v=T9hhp5qPykg&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=26)
 - CRUD completo de tarefas
 
+## Aula 25
+[Buscando tarefas](https://www.youtube.com/watch?v=PQ4uUnqhT8I&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm&index=27)
+- com a flat --host 0.0.0.0, funcionou no container
+- além disso, publiquei também a porta 3333 de dentro do container.
+
 ## Available Scripts
 
 In the project directory, you can run:
